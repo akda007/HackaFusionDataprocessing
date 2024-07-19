@@ -17,5 +17,5 @@ Including another URLconf
 from django.urls import include, path
 
 urlpatterns = [
-    path('dataApi/', include("dataApi.urls"))
+    path('data/', include("dataApi.urls"))
 ]

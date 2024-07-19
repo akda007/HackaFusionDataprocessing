@@ -67,7 +67,7 @@ def build_user_array(scores: dict):
 
     
 
-def dataprocess_instructor(json, student_name = ""):
+def dataprocess_instructor(json):
     avaliation = ClassAvaliation(json)
     scores = get_class_score(avaliation)
     
