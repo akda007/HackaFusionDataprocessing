@@ -6,23 +6,7 @@ competence_evaluations = {
     "QUALIFIED": 1.0
 }
 
-# instructor
-[
-    {
-        "subject": str,
-        "class_score": int,
-        "student_score": int
-        
-    }
-]
 
-# student
-[
-    {
-        "subject": str,
-        "student_score": int        
-    }
-]
 
 def get_user_score(user_avaliation: UserAvaliation):
     scores = {}
