@@ -67,9 +67,14 @@ def build_user_array(scores: dict):
 
     
 
-def dataprocess_instructor(json):
+def dataprocess_instructor(json, id = None):
     avaliation = ClassAvaliation(json)
     scores = get_class_score(avaliation)
+
+    if id != None:
+        user_name = [x for x in avaliation.avaliations if x.user.id == id][0].user.username
+
+        scores = scores[user_name]
     
     return scores
     

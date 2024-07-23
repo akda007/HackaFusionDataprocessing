@@ -8,9 +8,9 @@ from django.views.decorators.csrf import csrf_exempt
 
 @csrf_exempt
 @api_view(["POST"])
-def generate_chart_instructor(req):
+def generate_chart_instructor(req, id = None):
 
-    chart_data = dataprocess_instructor(req.body)
+    chart_data = dataprocess_instructor(req.body, id)
 
     return Response(chart_data, status.HTTP_200_OK)
 
